@@ -7,8 +7,9 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails51 for more book information.
 #---
 require 'test_helper'
-
+  
 class ProductTest < ActiveSupport::TestCase
+  fixtures :products
   test "product attributes must not be empty" do
     product = Product.new
     assert product.invalid?
